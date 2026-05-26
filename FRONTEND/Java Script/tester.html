@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //t of d between server and wap 
+        //api 
+        //javascript object notation
+        let cart = {
+            user: "ash",
+            items: [
+                {
+                    name: "lotion", price: 100
+                },
+                {
+                    name: "sun screen", price: 1200
+                }
+            ],
+            total: 300
+        };
+        console.log(cart)
+        let new_string = JSON.stringify(cart);//built in object
+        console.log(new_string)//js object json string
+        console.log(typeof (new_string));
+        let new_object = JSON.parse(new_string);
+        console.log(new_object)//json string to js object
+        console.log(typeof (new_object));
+
+    </script>
+</body>
+
+</html>

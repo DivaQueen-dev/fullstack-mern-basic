@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>task</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Externalcss/ash.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='main.js'></script>
+</head>
+<style>
+    html,
+    body {
+        background-color: aliceblue;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    #parent {
+        height: 100svh;
+        width: 100%;
+    }
+
+    .nav {
+        position: relative;
+        top: 30px;
+        height: 9%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    button {
+        color: white;
+        height: 50px;
+        width: 130px;
+        font-weight: bolder;
+        border-radius: 19px;
+        margin-top: 8px;
+        border: none;
+        font-size: 15px;
+        box-shadow: 2px 2px 2px #666;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .profile-card {
+        text-align: center;
+        height: 720px;
+        width: 400px;
+    }
+
+    .profile-card .img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 5px solid blue;
+        margin-bottom: 10px;
+    }
+
+    .profile-card h2 {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .profile-card p {
+        color: #666;
+    }
+
+    .button1 {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px 2px;
+        font-size: 0.9rem;
+        padding: 12px;
+        width: 60px;
+
+    }
+
+    .button2 {
+        background-color: white;
+        color: blue;
+        border: solid 2px blue;
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px 2px;
+        font-size: 0.9rem;
+
+    }
+
+    .button1 {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .button2 {
+        background-color: white;
+        color: blue;
+        border: 2px solid blue;
+    }
+
+    .line {
+        height: 1px;
+        width: 96%;
+        background-color: #ccc;
+        margin: 15px auto;
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        position: relative;
+        top: 30px;
+    }
+
+    .info-card input[type="text"] {
+        width: 600px;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 50px;
+    }
+
+    .info-card button {
+        width: 40%;
+        background-color: #007bff;
+        color: #fff;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-left: 130px;
+    }
+
+    .status-card {
+        margin-top: 20px;
+    }
+
+    .status-bar {
+        margin: 10px 0;
+    }
+
+    .status-bar span {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .status-bar .bar {
+        height: 8px;
+        border-radius: 4px;
+        background-color: #e9ecef;
+        overflow: hidden;
+    }
+
+    .status-bar .bar .progress {
+        height: 8px;
+        background-color: #007bff;
+    }
+
+    .status-card {
+        width: 800px;
+    }
+
+    .info-card {
+        width: 800px;
+    }
+</style>
+
+<body>
+    <div id="parent">
+        <div class="nav">
+            <button style="background-color: greenyellow;">Preview</button>
+            <button style="background-color: skyblue;">Html</button>
+            <button style="background-color: skyblue;">Css</button>
+            <button style="background-color: skyblue;">Download</button>
+            <button style="background-color: orangered;">Action</button>
+        </div>
+        <div class="container">
+            <!-- Profile Card -->
+            <div class="card profile-card">
+                <img src="../images/images (9).jpg" class="img">
+                <h2>Carter Sharer</h2>
+                <p>Full Stack Developer</p>
+                <p>Bay Area, San Francisco, CA</p>
+                <a href="#" class="button1">Follow</a>
+                <a href="#" class="button2">Message</a>
+                <div class="line"></div>
+                <p><strong><i class="fa-brands fa-safari"
+                            style="color: #007bff;font-size: 20px;margin-right: 16px;"></i>Website:</strong> bootdey</p>
+                <div class="line"></div>
+                <p><strong><i class="fa-solid fa-code-branch"
+                            style="color: black;font-size: 20px;margin-right: 11.5px;"></i>Github:</strong> @bootdey</p>
+                <div class="line"></div>
+                <p><strong><i class="fa-brands fa-upwork"
+                            style="color:green;font-size: 20px;margin-right: 13px;"></i>Portfolio:</strong> bootdey</p>
+                <div class="line"></div>
+                <p><strong><i class="fa-brands fa-instagram"
+                            style="color:#E1306C;font-size: 20px;margin-right: 12px;"></i>Instagram:</strong> bootdey
+                </p>
+                <div class="line"></div>
+                <p><strong><i class="fa-brands fa-threads"
+                            style="color: black;font-size: 20px;margin-right: 19px;font-weight: bold;"></i>Threads:</strong>
+                    bootdey</p>
+            </div>
+            <div>
+                <!-- Personal Info Card -->
+                <div class="card info-card">
+                    <h2>Personal Information</h2>
+
+                    <label>Full name:</label> <input type="text" placeholder="Carter Sharer"><br>
+                    <label>E mail:</label> <input type="text" placeholder="Carter@example.com"
+                        style="margin-left: 75px;"><br>
+                    <label>Phone:</label> <input type="text" placeholder="(239) 816-9029"
+                        style="margin-left: 75px;"><br>
+                    <label>Mobile:</label><input type="text" placeholder="(320) 380-4539"
+                        style="margin-left: 78px;"><br>
+                    <label>Address:</label><input type="text" placeholder="Bay Area, San Francisco, CA"
+                        style="margin-left: 67px;">
+                    <button>Save Changes</button>
+                </div>
+
+                <!-- Project Status Card -->
+                <div class="card status-card">
+                    <h2>Project Status</h2>
+                    <div class="status-bar">
+                        <span>Web Design</span>
+                        <div class="bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="status-bar">
+                        <span>Website Markup</span>
+                        <div class="bar">
+                            <div class="progress" style="width: 60%; background-color: #dc3545;"></div>
+                        </div>
+                    </div>
+                    <div class="status-bar">
+                        <span>One Page</span>
+                        <div class="bar">
+                            <div class="progress" style="width: 90%; background-color: #28a745;"></div>
+                        </div>
+                    </div>
+                    <div class="status-bar">
+                        <span>Mobile Template</span>
+                        <div class="bar">
+                            <div class="progress" style="width: 70%; background-color: #ffc107;"></div>
+                        </div>
+                    </div>
+                    <div class="status-bar">
+                        <span>Backend API</span>
+                        <div class="bar">
+                            <div class="progress" style="width: 80%; background-color:rgb(1, 156, 156);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

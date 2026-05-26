@@ -1,0 +1,349 @@
+.bg
+{
+    height: 650px;
+    width: 100%;
+    background-color: white;
+}
+.maindiv
+{
+    width: 1900px;
+}
+.div1
+{
+    height: 155px;
+    width: 200px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+}
+.div2
+{
+    height: 110px;
+    width: 150px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+    position: relative;
+    right: 30px;
+}
+.div3
+{
+    height: 125px;
+    width: 190px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 55px;   
+}
+.div4
+{
+    height: 120px;
+    width: 167px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 90%;
+    border-bottom-left-radius: 90%;
+    position: relative;
+    right: 110px;
+}
+.div5
+{
+    height: 100px;
+    width: 130px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 140px;   
+}
+.div6
+{
+    height: 110px;
+    width: 180px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 170px;
+}
+.div7
+{
+    height: 905x;
+    width: 110px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 190px;
+}
+.div8
+{
+    height: 115px;
+    width: 160px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 220px;
+}
+.div9
+{
+    height: 100px;
+    width: 130px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: relative;
+    right: 230px;
+}
+.div10
+{
+    height: 75px;
+    width: 140px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 90%;
+    position: relative;
+    right: 255px;
+}
+.div11
+{
+    height: 100px;
+    width: 155px;
+    float: left;
+    background-color: rgb(117,204,238);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 90%;
+    position: relative;
+    right: 280px;
+}
+.div12
+{
+    height: 150px;
+    width: 245px;
+    float: left;
+    background-color:rgb(117,204,238);
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 50%;
+    position: relative;
+    right: 295px;
+   
+}
+.sun
+{
+   height: 120px; 
+   width: 120px;
+   border-radius: 100%;
+   background-color: rgb(245,215,66);
+   margin-left: 45px;
+   float: left;
+   position: relative;
+   top: 50px;
+   right: 35px;
+   box-shadow: 0 0 50px rgb(235, 51, 27);
+}
+.road
+{
+    height: 240px;
+    width: 1540px;
+    background-color: rgb(81, 80, 80);
+    position: relative;
+    top: 460px;
+}
+.carbody
+{
+    height: 190px;
+    width:400px;
+    background-color: blue;
+    position: relative;
+    left:140px;
+    bottom: 125px;
+    border-top-right-radius: 50px;
+   
+}
+.window1
+{
+    height: 78px;
+    width: 230px;
+    position: relative;
+    background-color: dimgray;
+    opacity: 0.7;
+    position: relative; 
+    left:30px;
+     bottom: 130px;
+    float: left;
+}
+.window2
+{
+   
+    height: 78px;
+    width: 110px;
+    position: relative;
+    background-color: dimgray;
+    opacity: 0.7;
+    position: relative; 
+    border-top-right-radius: 15px;
+     bottom: 130px;
+    float: right;
+    right: 1px;
+}
+
+/*
+.cartop
+{
+    height: 60px;
+    width: 135px;
+    border-style: solid;
+    border-width: 1.5px;
+    background-color: blue;
+    position: relative;
+    bottom: 150px;
+    left: 195px;
+}*/
+.light
+{
+    height: 27px;
+    width: 34px;
+    border-style: solid;
+    border-color: black 1px;
+    background-color: yellow;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+    bottom: 150px;
+    left: 370px;
+}
+.carwheel1
+{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+    background-color:black;
+    position: relative;
+    bottom: 153px;
+    left: 170px;
+}
+.carwheel2
+{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 1px;
+    background-color:black;
+    position: relative;
+    top: -230px;
+    left: 420px;
+}
+.l1
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    margin-left:1px;
+    position: absolute;
+    bottom: 100px;
+}
+.l2
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 150px;
+}
+.l3
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+}
+.l4
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 450px;
+}
+.l5
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 600px;
+}
+.l6
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 750px;
+}
+.l7
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 900px;
+}
+.l8
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 1050px;
+}
+.l9
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 1200px;
+}
+.l10
+{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 1350px;
+}
+.l11
+{
+    background-color: white;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    bottom: 100px;
+    left: 1490px;
+}

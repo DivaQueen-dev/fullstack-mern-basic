@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        //a function which is passed as an argument to the other function
+        function display(callback, myName) {
+            console.log("Display Function")
+            callback(myName);
+        }
+        function hello(myName) {
+            console.log(`hello ${myName}`);
+        }
+        display(hello, "sai")
+        let arr = [1,2,3];
+        arr.map(neew)
+        function neew(ele) {
+            console.log(ele)
+        }
+        arr.forEach(dis)
+        function dis(ele) {
+            console.log(ele)
+        }
+        const new_arr=arr.map(neeww)
+        function neeww(ele)
+        {
+            return ele;
+        }
+        console.log(new_arr)
+        const new_num=arr.reduce(neeww)
+        function neeww(prev , next)
+{
+    return prev+next;
+}
+console.log(new_num)
+//es6 features and instead of callback we use arrows like previous maps
+//cconst new_nums2=nums.reduce((prev,next)=>(return prev*next));
+//console.log(new_nums2)
+    </script>
+</body>
+
+</html>

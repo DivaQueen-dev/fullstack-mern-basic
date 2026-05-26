@@ -1,0 +1,348 @@
+.parent {
+    height: 100svh;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    background-color: #1E90FF;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+
+
+h1 {
+    margin-top: 10px;
+    font-size: 70px;
+}
+
+p {
+    font-size: 16px;
+    margin: 25px;
+    opacity: 0.7;
+}
+
+p1 {
+    font-family: "Copperplate", "Copperplate Gothic Light", fantasy;
+    font-weight: bolder;
+    font-size: 50px;
+    letter-spacing: 9px;
+}
+
+p1:hover {
+    color: linear-gradient(to right, #000000, #ff0000, #ffa500);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 70px;
+
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card:hover {
+    box-shadow: 3px 2px 3px 8px white;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    margin: 5px 0;
+}
+
+
+/*digital section*/
+.digital-section {
+    position: relative;
+    height: 890px;
+    color: #000;
+    text-align: center;
+    background-image: url(../images/bg.avif);
+    background-size: cover;
+}
+
+.digital-section h2 {
+    font-size: 80px;
+    color: #000;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.digital-section p {
+    font-size: 19px;
+    color: #000;
+
+
+}
+
+
+.sub-div1,
+.sub-div2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 200px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.sub-div1 {
+    margin-bottom: 100px;
+}
+
+
+.digital-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    text-align: center;
+    margin: 0 10px;
+    color: black;
+}
+
+.digital-item:hover {
+    box-shadow: 4px 3px 4px 2px gray;
+}
+
+
+/* Meet The Team Section */
+.team-section {
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 40px 20px;
+    height: 700px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 80px;
+    margin: 50px;
+}
+
+.p2 {
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+.team-section p {
+    font-size: 20px;
+    opacity: 0.9;
+    word-spacing: 5px;
+    margin: 70px;
+    line-height: 30px;
+
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0 40px;
+}
+
+.team-member {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.team-member h3 {
+    margin: 0 0 10px;
+}
+
+.team-member p {
+    font-size: 14px;
+    margin: 5px 0;
+
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.team-members i {
+    color: blue;
+
+}
+
+.team-member:has(.bob:hover) {
+    box-shadow: 3px 2px 3px 8px white;
+}
+
+@media only screen and (max-width: 600px) {
+    .parent {
+        height: auto;
+        width: 100%;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .main {
+        background-color: #1E90FF;
+        color: #fff;
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 15px;
+        opacity: 0.7;
+    }
+
+    p1 {
+        font-family: "Copperplate", "Copperplate Gothic Light", fantasy;
+        font-weight: bolder;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 150px;
+
+    }
+
+    .digital-section {
+        position: relative;
+        height: 1130px;
+        color: black;
+        text-align: center;
+        background-image: url(../images/bg.avif);
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .digital-section h2 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    .digital-section p {
+        font-size: 16px;
+    }
+
+    .sub-div1,
+    .sub-div2 {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .digital-item {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .team-section {
+        padding: 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .team-section p {
+        font-size: 16px;
+        margin: 20px;
+        line-height: 24px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .team-member {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        margin-right: 5px;
+        padding: auto;
+    }
+}

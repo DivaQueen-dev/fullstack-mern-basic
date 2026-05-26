@@ -1,0 +1,24 @@
+#parent
+{
+    height: 100svh;
+    width: 100%;
+    display: flex;
+}
+.nav
+{
+    width: 20%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.search
+{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+}
+.contact
+{
+    width: 60%;
+    height: 100%;
+    background-color: brown;
+}

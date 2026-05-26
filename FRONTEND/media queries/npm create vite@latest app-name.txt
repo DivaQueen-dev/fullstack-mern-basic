@@ -1,0 +1,6 @@
+npm create vite@latest app-name
+select react
+select javascript
+cd my-app
+npm install
+npm run dev

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+
+    <script>
+        let min = prompt("Enter the minimum value:");
+        let max = prompt("Enter the maximum value:");
+
+        min = Number(min);
+        max = Number(max);
+
+        if (min > max ) {
+            console.log("Invalid input. Please enter valid numbers.");
+        } else {
+            let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+            console.log("Random Number:", randomNum);
+        }
+    </script>
+
+</body>
+</html>

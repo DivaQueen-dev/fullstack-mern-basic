@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+
+    <script>
+        // Creating elements
+        let body = document.body;
+        let container = document.createElement("div");
+        let count = document.createElement("h1");
+        let btn1 = document.createElement("button");
+        let btn2 = document.createElement("button");
+        let btn3 = document.createElement("button");
+
+        // Setting text content
+        count.innerHTML = "0";
+        btn1.innerHTML = "Increment";
+        btn2.innerHTML = "Decrement";
+        btn3.innerHTML = "Reset";
+
+        // Applying styles in JS
+        body.style.backgroundColor = "black";
+        body.style.display = "flex";
+        body.style.justifyContent = "center";
+        body.style.alignItems = "center";
+        body.style.height = "100vh";
+        body.style.margin = "0";
+
+        container.style.display = "flex";
+        container.style.flexDirection = "column";
+        container.style.alignItems = "center";
+        container.style.gap = "15px";
+
+        count.style.fontSize = "40px";
+        count.style.color = "white";
+        count.style.fontWeight = "bold";
+
+        function styleButton(btn) {
+            btn.style.backgroundColor = "gray";
+            btn.style.color = "white";
+            btn.style.padding = "15px";
+            btn.style.borderRadius = "10px";
+            btn.style.border = "none";
+            btn.style.cursor = "pointer";
+            btn.style.fontSize = "18px";
+            btn.style.width = "150px";
+            btn.style.textAlign = "center";
+        }
+
+        styleButton(btn1);
+        styleButton(btn2);
+        styleButton(btn3);
+
+        // Functionality
+        let value = 0;
+
+        btn1.onclick = function() {
+            if (value < 10) {
+                count.innerHTML = ++value;
+            }
+        };
+
+        btn2.onclick = function() {
+            if (value > -10) {
+                count.innerHTML = --value;
+            }
+        };
+
+        btn3.onclick = function() {
+            value = 0;
+            count.innerHTML = value;
+        };
+
+        // Appending elements
+        container.appendChild(count);
+        container.appendChild(btn1);
+        container.appendChild(btn2);
+        container.appendChild(btn3);
+        body.appendChild(container);
+
+    </script>
+
+</body>
+</html>

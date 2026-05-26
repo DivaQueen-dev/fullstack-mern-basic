@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Questions</title>
+</head>
+<!-- accordion -->
+<style>
+    .faq-container
+    {
+        width: 50%;
+        background-color: white;
+        border-radius: 15px;
+        border: 2px solid whitesmoke;
+        margin-top: 150px;
+        margin-left: 350px;
+    }
+    .item
+    {
+        margin: 10px 0;
+    }
+    .question
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+    }
+    .answer
+    {
+        display: none;
+        padding: 10px;
+        background-color: white;
+        border-left: 2px solid grey;
+        margin-top: 5px;
+    }
+
+</style>
+<body>
+
+<h1 style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;margin-top: 50px;">FAQS-On Java Script</h1>
+<div class="faq-container">
+    <div class="item">
+        <div class="question">
+            <span>What is JavaScript?</span>
+            <span class="arrow" onclick="fun1()">▼</span>
+        </div>
+        <div class="answer">
+            It is a programing language.
+        </div>
+    </div>
+    <div class="item">
+        <div class="question">
+            <span>What is DOM?</span>
+            <span class="arrow" onclick="fun2()">▼</span>
+        </div>
+        <div class="answer">
+            It is document object model.
+        </div>
+    </div>
+    <div class="item">
+        <div class="question">
+            <span>What is JSON?</span>
+            <span class="arrow" onclick="fun3()">▼</span>
+        </div>
+        <div class="answer">
+            It is used for transfer of data between server and webapplication.
+        </div>
+    </div>
+    
+</div>
+<script>
+    let para1 = document.getElementsByClassName("answer")[0]
+    let para2 = document.getElementsByClassName("answer")[1]
+    let para3 = document.getElementsByClassName("answer")[2]
+    let arrow1 = document.getElementsByClassName("arrow")[0]
+    let arrow2 = document.getElementsByClassName("arrow")[1]
+    let arrow3 = document.getElementsByClassName("arrow")[2]
+
+
+function fun1()
+{
+    if(para1.style.display==="none"){
+        arrow1.innerHTML = "▲"
+        arrow3.innerHTML = "▼"
+        arrow2.innerHTML = "▼"
+    para1.style.display="block";
+    para2.style.display="none";
+    para3.style.display="none";
+    }
+    else
+    {
+        arrow1.innerHTML = "▼"
+        para1.style.display="none"
+    }
+}
+function fun2()
+{
+    if(para2.style.display==="none"){
+    arrow2.innerHTML = "▲"
+    arrow3.innerHTML = "▼"
+    arrow1.innerHTML = "▼"
+    para2.style.display="block";
+    para1.style.display="none";
+    para3.style.display="none";
+    }
+    else{
+        arrow2.innerHTML = "▼"
+        para2.style.display="none"
+    }
+}
+function fun3()
+{
+    if(para3.style.display==="none"){
+    arrow3.innerHTML = "▲"
+    arrow2.innerHTML = "▼"
+    arrow1.innerHTML = "▼"
+    para3.style.display="block";
+    para2.style.display="none";
+    para1.style.display="none";
+    }
+    else{
+        arrow3.innerHTML = "▼"
+        para3.style.display="none";
+    }
+}
+</script>
+
+
+</body>
+</html>

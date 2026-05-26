@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            obj1: {
+                animal: "tiger",
+                type: "carnivorous"
+            }
+        }
+        let obj2 = obj;
+        console.log(obj)
+        console.log(obj2)
+        obj2.animal = "cheetha"
+        console.log(obj2)
+        console.log(obj)
+        //object deconstructor
+        let vegies = {
+            carrot: "orange",
+            tomato: "red",
+            aubgine: "voilet",
+            okra: "green" //info mein ise alphabetical order mein store jaata hai
+        }
+        let { carrot: pumpkin, okra: chilli } = vegies
+        console.log(pumpkin, chilli)
+        let { tomato } = vegies;
+        console.log(tomato)
+        tomato = "cherryred"
+        console.log(tomato);
+        console.log(vegies)
+        //array of objects , using map method to itearate and print the object data 
+        const arr = [
+            {
+                name: "arrkrkr",
+                id: "38648347"
+            },
+            {
+                name: "iuerfhe",
+                id: "3428947"
+            },
+            {
+                name: "wkjfhwjk",
+                id: "495794"
+            }
+        ]
+        arr.map(item => {
+            console.log(`Name: ${item.name}, ID: ${item.id}`);
+        });
+        //new
+        // Array of objects 
+        const people = [
+            { name: 'John', age: 30, city: 'New York' },
+            { name: 'Jane', age: 25, city: 'London' },
+            { name: 'Mike', age: 35, city: 'Los Angeles' }
+        ];
+
+        // Using map to iterate over the array and print object data
+        people.map(person => {
+            console.log(`Name: ${person.name}, Age: ${person.age}, City: ${person.city}`);
+        });
+
+    </script>
+</body>
+
+</html>

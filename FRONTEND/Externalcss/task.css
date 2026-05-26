@@ -1,0 +1,79 @@
+.parent
+{
+    width: 800px;
+    height: 800px;
+}
+.subparent1
+{
+    width: 400px;
+    height:400px;
+    background-color: yellow;
+    float: left;
+}
+.subparent2
+{
+    width: 400px;
+    height:400px;
+    background-color: red;
+    float: right;
+}
+.subparent3
+{
+    width: 400px;
+    height:400px;
+    background-color: red;
+    float: left;
+}
+.subparent4
+{
+    width: 400px;
+    height:400px;
+    background-color: yellow;
+    float: right;
+}
+.part 
+{
+    width:100%;
+    height:50%;
+}
+.child1
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: right;
+}
+.child2
+{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    float: left;
+}
+.child3
+{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    float:right;
+}
+.child4
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+.div
+    {
+           height: 500px;
+           width: 300px;
+           border:dotted black 5px;
+           font-family:Arial, Helvetica, sans-serif ;
+           font-size: x-large;
+           text-align: justify;
+           border-radius: 30px;
+    }
+    <div class="div">
+        <p>i am a very good girl tell to your techer my dear brother i am a very good girl tell to your techer my dear brotheri am a very good girl tell to your techer my dear brother i am a very good girl tell to your techer my dear brother i am a very good girl tell to your techer my dear brother i am a very good girl tell to your techer my dear brother.</p>
+    </div>

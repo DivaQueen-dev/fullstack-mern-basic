@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        //raw json , document.write is old method so we use prompt
+   let obj=
+   {
+        first_name:"pallavi",
+        last_name:"attili" 
+   } 
+   console.log(obj);
+   console.log(typeof obj);
+
+   let json_obj=JSON.stringify(obj);
+   console.log(json_obj);
+   console.log(typeof json_obj)
+
+let normal_obj=JSON.parse(json_obj)
+console.log(normal_obj)
+console.log(typeof normal_obj)
+
+let input=prompt("enter a name")
+console.log(input)
+
+arr=`["hii","hello","im good"]`
+arr=`[
+    {
+        "name":"antony",
+        "age":48,
+        "is employed":true
+
+    }
+]`
+//we can only use back ticks only if the key and values pairs are in quotes
+</script>
+</body>
+</html>

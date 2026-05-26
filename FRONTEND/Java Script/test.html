@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background-color: white;
+            height: 100px;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .container-1 {
+            background-color: palevioletred;
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h2>Show/Hide Content Example</h2>
+        <button onclick="fun()" style="padding: 26px; border-radius: 20px;">Toggle Content</button>
+        <div class="container hidden" id="hiddenContent">
+            <h1>This is the hidden content</h1>
+        </div>
+    </div>
+
+    <script>
+        function fun() {
+            const content = document.getElementById('hiddenContent');
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

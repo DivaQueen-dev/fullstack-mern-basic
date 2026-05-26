@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JSON Example</title>
+</head>
+<body>
+    <script>
+        // JavaScript Object (Cart Data)
+        let cart = {
+            user: "Ash",
+            items: [
+                { name: "Cream", price: 299, quantity: 1 },
+                { name: "Lotion", price: 149, quantity: 2 }
+            ],
+            total: 597
+        };//ctrl+/ for comments
+
+        // Convert Object to JSON String
+        let jsonData = JSON.stringify(cart);
+        console.log("JSON String:", jsonData);
+        
+        // Convert JSON String Back to Object
+        let parsedData = JSON.parse(jsonData);
+        console.log("Parsed JSON Object:", parsedData);
+    </script>
+</body>
+</html>

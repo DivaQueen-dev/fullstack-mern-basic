@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        background-image: url(../Images/authors/emily-dickinson.jpg);
+        height: 500px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container-1
+    {
+      background-image: url(../Images/authors/Clarice-lispector.jpg);
+      height: 500px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+   
+</style>
+<body>
+    <div class="container"> </div> <button onclick="fun()">click</button>
+
+   
+    <script>
+        // classList.add()
+        // classList.remove()
+        // classList.replace()
+        // classList.contains()
+        let container=document.getElementsByClassName('container')[0];
+         function fun()
+       {
+        //     if(container.classList.contains('comntainer'))
+        // {
+        //     container.classList.replace('container','container-1')
+        // }
+        // else
+        // {
+        //     console.log(container)
+        //     container.classList.replace('container-1','container')
+
+        // }
+       
+        container.classList.toggle('container-1')
+        console.log(container)
+    }
+    </script>
+</body>
+</html>

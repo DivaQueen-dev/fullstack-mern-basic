@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To-Do List</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .input {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .io {
+
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .btn1 {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            margin-left: 5px;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-top: 1px solid grey;
+        }
+
+        .btn2 {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+
+        }
+
+        #sample {
+            width: 93%;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        .btn3
+        {
+            background-color: rgb(170, 169, 169);
+            border: none;
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TO-DO LIST</h1>
+        <div class="input">
+            <input class="io" type="text" placeholder="What do you Want to do">
+            <button class="btn1" onclick="addTask()">Enter</button>
+        </div>
+        <div id="sample">Your to do list will be displayed here
+            <ul class="list"></ul>
+        </div>
+
+    </div>
+
+    <script>
+        const todoInput = document.querySelector('.io');
+        const addButton = document.querySelector('.btn1');
+        const todoList = document.querySelector('.list');
+
+        function addTask() {
+
+            const Text = todoInput.value;
+            if (Text != "") {
+                const newItem = document.createElement('li');
+                newItem.className = 'item';
+
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+
+                const task = document.createElement('span');
+                task.textContent = Text;
+                
+                const editBtn=document.createElement('button');
+                editBtn.className="btn3";
+                editBtn.textContent="Edit"
+
+                const deleteButton = document.createElement('button');
+                deleteButton.className = 'btn2';
+                deleteButton.textContent = 'Delete';
+
+
+                deleteButton.onclick = function () {
+                    newItem.style.display="none";
+                };
+                editBtn.onclick=function()
+                {
+                    curlab=task;
+                    todoInput.value=task.innerHTML;
+                    newItem.style.display="none";
+                }
+                
+                newItem.appendChild(checkbox);
+                newItem.appendChild(task);
+                newItem.appendChild(editBtn);
+                newItem.appendChild(deleteButton);
+                todoList.appendChild(newItem);
+
+                todoInput.value="";
+            }
+
+
+        }
+function updatelab()
+{
+    curlab.innerHTML=todoInput.value;
+    task=curlabel;
+    todoInput='';
+    curlab='';
+}
+butt.addEventListner('click',function()
+{
+if(curlab!="")
+{
+updatelab();
+}
+else{
+    addTask();
+}
+})
+
+    </script>
+</body>
+
+</html>

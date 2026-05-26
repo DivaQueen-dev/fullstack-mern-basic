@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+     .div
+     {
+        background-color: brown;
+        height:500px ;
+        width: 700px;
+        border: none;
+        border-radius: 20px;
+    
+     }
+     .button
+     {
+        position: relative;
+        top: 190px;
+        border-radius: 20px;
+        margin: 50px;
+        height: 60px;
+        width: 250px;
+        background-color: blueviolet;
+        text-align: center;
+        font-weight: bolder;
+
+     }
+     .div:has(.button:hover )
+     {
+        background-color: aqua;
+        color: azure;
+     }
+     .button:hover
+     {
+        background-color:palevioletred;
+     }
+     .div:hover 
+     {
+        background-color:gray;
+        color: chartreuse;
+     }
+     .div2{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        float: right;
+        position: relative;
+        bottom: 100px;
+     }
+     body:has(.div2:hover ) .div
+     {      
+        background-color: black;
+        color: aqua;
+     }
+</style>
+<body>
+    <center>
+    <div class="div">
+        <div class="button"><br>Hover Me</div>
+    </div>
+</center>
+<div class="div2"></div>
+</body>
+</html>

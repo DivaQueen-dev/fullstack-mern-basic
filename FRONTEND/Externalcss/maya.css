@@ -1,0 +1,355 @@
+.nav-bar {
+    background-color: white !important;
+    z-index: 1000;
+}
+
+.nav-item a {
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.nav-item a:hover {
+    color: darkgreen !important;
+}
+.btn:hover
+{
+    background-color: #50a14e !important;
+}
+.parent {
+    background-color: rgb(240, 240, 240) !important;
+    padding: 2%;
+}
+
+.page1-left {
+    height: auto;
+    width: 80%;
+}
+
+.page1-right {
+    background-image: url('../images/Maya/thub-girl-1.png'), url('../Images/Maya/shape-04\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain, auto 50svh;
+    background-position: center;
+    height: 80svh;
+}
+
+.page1-section {
+    height: 150px;
+    width: 350px;
+    background-color: snow;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.page2 {
+    background-color: rgb(17, 114, 17) !important;
+}
+
+.page2 .section {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #418d40;
+}
+
+#sinc:hover {
+    background-color: #b7c0ba;
+}
+
+#a {
+    background-color: #1AB69D12;
+}
+
+#b {
+    background-color: #EE4A6212;
+}
+
+#c {
+    background-color: #0ECD7312;
+}
+
+#d {
+    background-color: #F8B81F12;
+}
+
+#e {
+    background-color: #8E56FF12;
+}
+
+#f {
+    background-color: #F9259612;
+}
+
+#g {
+    background-color: #5866EB12;
+}
+
+#h {
+    background-color: #F8941F12;
+}
+
+#i {
+    background-color: #39C0FA12;
+}
+
+#j,
+#k,
+#l,
+#m {
+    background-color: white;
+}
+
+#a:hover {
+    background-color: #1addaf;
+    color: white;
+}
+
+#b:hover {
+    background-color: rgb(241, 194, 219);
+    color: white;
+}
+
+#c:hover {
+    background-color: #008730;
+    color: white;
+}
+
+#d:hover {
+    background-color: rgb(226, 189, 119);
+    color: white;
+}
+
+#e:hover {
+    background-color: rgb(215, 18, 215);
+    color: white;
+}
+
+#f:hover {
+    background-color: deeppink;
+    color: white;
+}
+
+#g:hover {
+    background-color: rgb(151, 151, 225);
+    color: white;
+}
+
+#h:hover {
+    background-color: rgb(226, 189, 119);
+    color: white;
+}
+
+#i:hover {
+    background-color: rgb(152, 209, 231);
+    color: white;
+}
+
+#j:hover,
+#k:hover,
+#l:hover,
+#m:hover {
+    background-color: #008730;
+    color: white;
+}
+
+.s {
+    width: 650px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.broswer:hover {
+    background-color: #1eba54;
+}
+
+.page4-left {
+    background-image: url('../images/Maya/about-02.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+}
+
+.page4-left .vedio-button {
+    background-color: white;
+    color: #418d40;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.page4-left .vedio-button:hover {
+    background-color: #287d27;
+}
+
+.page4-left .down {
+    height: 85px;
+    width: 250px;
+    background-color: snow;
+    border-radius: 5px;
+}
+
+.page4-left .up {
+    height: 195px;
+    width: 250px;
+    background-color: snow;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.instagram {
+    color: #e4405f;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.copyright {
+    margin-top: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.contact-info {
+    color: #333;
+}
+
+.contact-heading {
+    color: #008000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.dots {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.lines {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.red {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.h1img {
+    position: absolute;
+    top: 25%;
+    right: 1%;
+}
+
+.pic:hover {
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 2px 0px grey;
+}
+
+@media only screen and (max-width: 508px) {
+    .title {
+        position: relative;
+        bottom: 140px;
+        right: 45px;
+    }
+
+    .girl {
+        position: relative;
+        bottom: 260px;
+    }
+
+    .moun {
+        display: none;
+    }
+
+    #sinc {
+        display: none;
+    }
+
+    .girl1 {
+        position: absolute;
+        top: 150px;
+    }
+
+    .con {
+        position: relative;
+        top: 450px;
+    }
+
+    .b {
+        position: relative;
+        top: 30px;
+    }
+
+    .con1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .tab,
+    .h1img,
+    .red,
+    .lines,
+    .dots {
+        display: none;
+    }
+
+    .tab1 {
+        position: relative;
+        right: 90px;
+    }
+
+    .drive {
+        position: relative;
+        top: 600px;
+    }
+
+    #or {
+        position: relative;
+        left: 80px;
+    }
+
+    #sis {
+        position: absolute;
+        top: 2180px;
+        width: 500px;
+        height: 340px;
+        left: 120px;
+    }
+
+    #tit {
+        position: absolute;
+        height: 300px;
+    }
+}

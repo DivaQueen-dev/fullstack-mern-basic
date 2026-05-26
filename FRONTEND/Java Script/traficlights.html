@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TrafficLights</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src="../Java Script/traficlights.js"></script>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center;
+        gap: 240px;
+        position: relative;
+        top: 100px;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+        width: 130px;
+    }
+
+    .btn {
+        background-color: whitesmoke;
+        font-weight: bolder;
+        height: 50px;
+        width: 150px;
+        border-radius: 50px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        height: 400px;
+        width: 130px;
+        border-radius: 8%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .c {
+        background-color: white;
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+    }
+</style>
+
+<body>
+    <h1
+        style="color: white;text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-top: 40px;">
+        TrafficLights🚥</h1>
+    <section class="parent">
+        <div class="container-1">
+            <button class="btn u" onclick="red()">Stop</button>
+            <button class="btn d" onclick="yellow()">Wait</button>
+            <button class="btn t" onclick="green()">Go!!</button>
+        </div>
+        <div class="container-2">
+            <div class="c c1"></div>
+            <div class="c c2"></div>
+            <div class="c c3"></div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+#parent {
+    height: 100svh;
+    width: 100%;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* nav bar */
+.nav {
+    width: 100%;
+    height: 80px;
+
+
+}
+
+.logo {
+    width: 40%;
+    float: left;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.sg {
+    margin-left: 20px;
+    height: 60%;
+    width: 40%;
+}
+
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+    align-items: center;
+    display: flex;
+}
+
+a {
+
+    color: #333;
+    font-size: larger;
+    margin-left: 45px;
+    text-decoration: none;
+    padding: 30px;
+
+}
+
+.menu a:hover {
+    color: #ffcc00;
+    font-size: x-large;
+}
+
+/* hero section*/
+.hero {
+    height: 820px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/pexels-photo-355770-removebg-preview.png');
+    background-position: center;
+    background-size: cover;
+    background-color: lightgray;
+}
+
+.data1 {
+
+
+    height: 350px;
+    width: 100%;
+
+
+}
+
+.data1 h1 {
+
+    font-size: 80px;
+}
+
+.data1 p {
+    color: gray;
+
+}
+
+.bt1,
+.bt2 {
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: hidden;
+    width: 189px;
+    font-weight: bold;
+    opacity: 0.9;
+    font-size: medium;
+}
+
+.bt1 {
+    background-color: #ffcc00;
+
+}
+
+.bt2 {
+    background-color: #333;
+    color: white;
+}
+
+/* tick marks*/
+.ticks {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    height: 320px;
+    font-size: larger;
+}
+
+.one,
+.two,
+.three {
+    width: 30%;
+    padding: 25px;
+    float: left;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.ticks p {
+    color: gray;
+}
+
+.one i,
+.two i,
+.three i {
+    font-size: 40px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* web design */
+.web {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+
+}
+
+.img2,
+.img4 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.img22,
+.img33,
+.img44,
+.img55,
+.img66 {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.img22 {
+    position: relative;
+    bottom: 6px;
+}
+
+.img44 {
+    position: relative;
+    bottom: 3.5px;
+}
+
+.data2,
+.data4 {
+    float: right;
+    height: 60%;
+    width: 50%;
+    position: relative;
+    margin-top: 90px;
+}
+
+.data2 h2,
+.data3 h2,
+.data4 h2 {
+    font-size: 50px;
+}
+
+p {
+    color: gray;
+}
+
+.data2 button,
+.data3 button,
+.data4 button {
+    margin-top: 5px;
+    background-color: #ffcc00;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    border: hidden;
+}
+
+/*branding*/
+.brand {
+    margin-top: 40px;
+    height: 500px;
+    width: 100%;
+}
+
+.img3 {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.data3 {
+    float: left;
+    height: 60%;
+    width: 50%;
+    position: relative;
+    top: 90px;
+    left: 120px;
+}
+
+/*driven by*/
+.driven {
+    margin-top: 40px;
+    height: 500px;
+    width: 100%;
+    background-color: #1B1B1B;
+}
+
+.driven h2 {
+    color: white;
+}
+
+.driven p {
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+/*featured work*/
+.work {
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.matter {
+    height: 80px;
+    width: 100%;
+}
+
+.text {
+    float: left;
+    height: 100%;
+    width: 60%;
+    margin-left: 110px;
+
+
+
+}
+
+.text h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #1B1B1B;
+}
+
+.buttonx {
+    float: right;
+    height: 100%;
+    width: 150px;
+    margin-right: 100px;
+}
+
+.buttonxx {
+    background-color: #333;
+    padding: 18px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 28px;
+}
+
+.img5 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 30px;
+
+}
+
+.img6 {
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: 30px;
+}
+
+.img55,
+.img66 {
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    box-shadow: 4px 4px 3px #333;
+    ;
+}
+
+.img55 {
+    margin-left: 30px;
+}
+
+/*users*/
+.users {
+    width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 180px;
+    height: 500px;
+    font-size: larger;
+    background-color: rgb(219, 219, 219);
+}
+
+.u1,
+.u2,
+.u3 {
+    margin-top: 40px;
+    width: 30%;
+    padding: 25px;
+    float: left;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #333;
+}
+
+.users p {
+    color: gray;
+}
+
+.user {
+    border-radius: 100%;
+    box-shadow: 3px 4px 3px #333;
+}
+
+.user:hover {
+    box-shadow: 4px 4px 4px #333;
+    height: 200px;
+}
+
+.u3 {
+    margin-top: 40px !important;
+}
+
+/*work together*/
+.together {
+    background-color: #1B1B1B;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.together button {
+    background-color: #ffcc00;
+    padding: 25px;
+    border-radius: 10px;
+    border: hidden;
+    width: 189px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.together h1 {
+    color: white;
+    font-size: 50px;
+
+}
+
+.together p {
+    color: gray;
+    font-size: 22px;
+}
+
+.end {
+    width: 100%;
+    height: 70px;
+}
+
+.ending {
+    width: 100%;
+    height: 48px;
+    background-color: #1B1B1B;
+}
+
+.ending p {
+    color: gray;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    position: relative;
+    top: 17px;
+}
+
+/* Media Query for mobile devices with a max-width of 480px */
+@media screen and (max-width: 480px) {
+    .nav {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo,
+    .menu {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero {
+        height: 500px;
+        background-size: cover;
+    }
+
+    .data1 h1 {
+        font-size: 50px;
+    }
+
+    .data2 h2,
+    .data3 h2,
+    .data4 h2 {
+        font-size: 30px;
+    }
+
+    .bt1,
+    .bt2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .ticks {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img55,
+    .img66 {
+        width: 100%;
+        height: auto;
+    }
+
+    .users {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .together {
+        padding: 20px;
+    }
+
+    .together h1 {
+        font-size: 40px;
+    }
+
+    .together p {
+        font-size: 18px;
+    }
+
+    .together button {
+        width: 100%;
+    }
+
+    .ending {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .ending p {
+        font-size: 12px;
+    }
+}

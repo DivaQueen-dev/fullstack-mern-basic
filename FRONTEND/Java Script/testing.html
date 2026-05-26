@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>Hello , this will be changed</p>
+    <h2>dfhdhfkdk</h2> -->
+    <h1>Hello , this text will be changed</h1>
+    <div class="container" id="para">
+        <p>hey</p>
+        <p>hi</p>
+        <p>hello</p>
+    </div>
+    <p class="container">javascript</p>
+    <h3 class="text">It is what it is</h3>
+    <h3 class="text">This is the end</h3>
+    <script>
+        let a=document.querySelector("h1")
+        a.innerText="hola yo soy dora";
+        console.log(a)
+        let a1=document.querySelectorAll(".text")
+        console.log(a1)
+        let b=document.getElementById("para")
+        console.log(b)
+        let c=document.getElementsByClassName("container")
+        console.log(c)
+        let c1=document.getElementsByClassName("container")[0]
+        console.log(c1.childNodes)
+        let d=document.getElementsByClassName("container")[1]
+        console.log(d)
+        let x=document.getElementsByTagName("h3")
+        console.log(x)
+        let y=document.getElementsByTagName("h3")[1]
+        console.log(y)
+        // let a=document.querySelector("p").textContent="<b>hi this is text<b>"
+        // let a2=document.querySelector("h2").innerHTML="<b>hi this is text<b>"
+    </script>
+</body>
+</html>

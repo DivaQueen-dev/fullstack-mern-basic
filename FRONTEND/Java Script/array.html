@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       let arr = [123, "apple", true, 9, 643];
+        console.log(arr)
+        arr[0] = 456;
+        arr[5] = "orange"; 
+        arr.push(100)
+        arr.pop();
+        arr.push(457);
+        arr.shift();//deletes 1st element of array
+        console.log(arr);
+        arr.push("ant");
+        arr.unshift("eagel");//adds element to start of the array
+        arr.push('k');
+        console.log(arr);
+        /*arr=["yo soy dora"];
+        console.log(arr);*/
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        for (let i = arr.length - 1; i >= 0; i--) { /**/
+            console.log(arr[i]);
+        }
+        let nums = [1, 2, 3, 4, 5, 6]
+        console.log(nums)
+        let new_nums = nums.slice(1, 4)//last will not be printed the original array is no effected
+        console.log(new_nums)
+        let new_nums1 = (nums.splice(1, 2, 20));//last will not be printed and 10 is added to 0 index
+        console.log(new_nums1)
+        console.log(nums)
+        let n = [10, 80, 30, 40, 50, 60]
+        n.map((element, index,arr) => {
+            console.log(element, index,arr);
+        })
+        const numbers = [1, 2, 3];
+numbers.forEach((value, index, arr) => {
+    arr[index] = value * 10;
+});
+console.log(numbers);
+/*let n2=[100,200,300,400,500,600]
+let new_n2=n2.filter(ele=> ele > 100);
+console.log(new_n2);*/
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+
+.course-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  padding: 20px;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 10px; 
+}
+
+.course-card {
+  width: 290px; 
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.course-info {
+  margin-top: 10px;
+}
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 15px;
+}
+
+.course-title {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.course-instructor {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.course-category {
+  background-color: #e8f5e9;
+  color: #388e3c;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.course-students {
+  color: #757575;
+}
+
+.course-button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+}

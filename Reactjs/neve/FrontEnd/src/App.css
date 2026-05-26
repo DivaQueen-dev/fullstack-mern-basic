@@ -1,0 +1,502 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  padding-top: 70px; 
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.neve-logo {
+  width: 52px;
+  height: 52px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 52px;
+  margin-right: 8px;
+  font-size: 2rem;
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-item :hover {
+  color: #ffa726 !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Page Content */
+.page-content {
+  margin-top: 70px;
+}
+
+.page-header {
+  padding: 80px 0;
+  background-color: #222;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(220, 215, 215);
+  background-image: url(./assets/mountains.png);
+  background-size: cover;
+  background-position: center;
+  height: 735px;
+  margin-top: -70px;
+}
+
+.hero .container {
+  max-width: 750px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+  padding: 10px 25px;
+  font-weight: 500;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ffb84d;
+  border-color: #ffb84d;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffa726;
+  border-color: #ffa726;
+  color: #333;
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff5e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.col-md-4:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+.feature-icon i {
+  color: #ffb84d;
+  font-size: 1.9rem;
+}
+
+.features h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Web Design and Branding Sections */
+.web-design {
+  background-color: rgb(233, 238, 238);
+}
+
+.web-design, .branding {
+  padding: 60px 0;
+}
+
+.web-design img, .branding img, .values img {
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.web-design img:hover, .branding img:hover, .values img:hover {
+  transform: scale(1.02);
+}
+
+.web-design h2, .branding h2, .values h2, .featured-work h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Values Section */
+.values {
+  background-color: #222;
+}
+
+/* Featured Work Section */
+.featured-work img {
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.featured-work img:hover {
+  transform: scale(1.02);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.testimonials img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover img {
+  transform: scale(1.1);
+}
+
+.testimonial-text {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  position: relative;
+  left: -7px;
+}
+/* CTA */
+.light-gray-bg {
+  background-color: #f0f0f0 !important;
+}
+/* Portfolio Page */
+.portfolio-item {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-item .portfolio-img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-img {
+  transform: scale(1.05);
+}
+
+/* News Page */
+.news-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Contact Form */
+.form-control {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ffb84d;
+  box-shadow: 0 0 0 0.25rem rgba(255, 184, 77, 0.25);
+}
+
+/* Call to Action */
+.cta {
+  background-color: #222 !important;
+}
+
+/* Component transitions */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Typography */
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.05);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+/* Add this for improved responsiveness */
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .testimonials {
+    padding: 60px 15px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    height: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .page-header {
+    padding: 60px 0;
+  }
+  
+  .testimonial-item {
+    text-align: center;
+  }
+  
+  .testimonials img {
+    left: 0;
+  }
+  
+  .testimonial-author {
+    left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    height: 500px;
+  }
+  
+  .hero-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .hero-buttons .btn:first-child {
+    margin-right: 0 !important;
+  }
+}
+
+/* Footer - Let's add a simple footer */
+.footer {
+  background-color: #0c0101;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffb84d;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social-links li {
+  margin-right: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffb84d;
+}
+.icon-silver {
+  color: #ffb84d !important;  /* Ensure color is applied with high priority */
+}
+/* 
+This CSS file has been updated to remove dark mode functionality.
+Only the relevant styles are shown here - you would keep all other styles from 
+your original App.css that aren't related to the dark mode
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  padding-top: 70px; 
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-navbar {
+  background-color: #ffffff !important;
+  color: #333;
+}
+
+.light-navbar .nav-link {
+  color: #333 !important;
+}
+
+/* Keep the neve-logo styling */
+.neve-logo {
+  width: 52px;
+  height: 52px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 52px;
+  margin-right: 8px;
+  font-size: 2rem;
+  text-decoration: underline;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-item :hover {
+  color: #ffa726 !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Remove dark mode specific styles - keep all other original styles */
+/* ... (rest of your original CSS) ... */

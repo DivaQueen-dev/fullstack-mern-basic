@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="count">0</h1>
+        <button id="btn1">Increment</button>
+        <button id="btn2">Decrement</button>
+        <button id="btn3">Reset</button>
+    </div>
+
+    <script>
+        // Selecting elements
+        let body = document.body;
+        let container = document.getElementById("container");
+        let count = document.getElementById("count");
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+
+        // Applying styles using JavaScript
+        body.style.backgroundColor = "black";
+        body.style.display = "flex";
+        body.style.justifyContent = "center";
+        body.style.alignItems = "center";
+        body.style.height = "100vh";
+        body.style.margin = "0";
+
+        container.style.display = "flex";
+        container.style.flexDirection = "column";
+        container.style.alignItems = "center";
+        container.style.gap = "15px";
+
+        count.style.fontSize = "40px";
+        count.style.color = "white";
+        count.style.fontWeight = "bold";
+
+        // Styling buttons without using a function
+        btn1.style.backgroundColor = "gray";
+        btn1.style.color = "white";
+        btn1.style.padding = "15px";
+        btn1.style.borderRadius = "10px";
+        btn1.style.border = "none";
+        btn1.style.cursor = "pointer";
+        btn1.style.fontSize = "18px";
+        btn1.style.width = "150px";
+        btn1.style.textAlign = "center";
+
+        btn2.style.backgroundColor = "gray";
+        btn2.style.color = "white";
+        btn2.style.padding = "15px";
+        btn2.style.borderRadius = "10px";
+        btn2.style.border = "none";
+        btn2.style.cursor = "pointer";
+        btn2.style.fontSize = "18px";
+        btn2.style.width = "150px";
+        btn2.style.textAlign = "center";
+
+        btn3.style.backgroundColor = "gray";
+        btn3.style.color = "white";
+        btn3.style.padding = "15px";
+        btn3.style.borderRadius = "10px";
+        btn3.style.border = "none";
+        btn3.style.cursor = "pointer";
+        btn3.style.fontSize = "18px";
+        btn3.style.width = "150px";
+        btn3.style.textAlign = "center";
+
+        // Functionality
+        let value = 0;
+
+        btn1.onclick = function() {
+            if (value < 10) {
+                count.innerHTML = ++value;
+            }
+        };
+
+        btn2.onclick = function() {
+            if (value > -10) {
+                count.innerHTML = --value;
+            }
+        };
+
+        btn3.onclick = function() {
+            value = 0;
+            count.innerHTML = value;
+        };
+    </script>
+
+</body>
+</html>

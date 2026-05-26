@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amstrong</title>
+</head>
+
+<body>
+    <script>
+        let number = 1634;
+        let number_str = number.toString();
+        let number_srt_len = number_str.length;
+        let value = number;
+        let sum = 0;
+        while (number != 0) {
+            sum = sum + ((number % 10) ** number_srt_len);
+            number = parseInt(number / 10);
+        }
+        if (value === sum)//strictly check , data type also
+        {
+            console.log(sum + " it is an amstrong number");
+        }
+        else {
+            console.log(sum + " it is not  an amstrong number");
+        }
+        //String Templates
+        let str = " hello, 'this is me anish anish'...";
+        console.log(str)
+        console.log(str.charAt(6));
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.toLocaleUpperCase());
+        console.log(str.indexOf("is"));
+        console.log(str.lastIndexOf("s"));
+        console.log(str.includes("anish"));
+        console.log(str.startsWith("ello"));
+        console.log(str.endsWith("ish..."));
+        console.log(str.replace("anish", "manish"));
+        console.log(str.replaceAll("anish", "manish"));
+        console.log(str.split(","));
+        console.log(str.trim());
+        console.log(str.trimStart());
+        console.log(str.trimEnd());
+        console.log(str.trimLeft());
+        console.log(str.trimRight());
+        let str2="fullstack";
+        console.log(str.concat(str2," " , str));
+        console.log(str.substring(7,15));
+    </script>
+</body>
+
+</html>

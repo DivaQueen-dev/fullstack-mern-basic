@@ -1,0 +1,275 @@
+/* For devices with width up to 768px (tablets) */
+@media screen and (max-width: 768px) {
+
+    /* Navigation bar layout */
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav button {
+        width: 80%;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    /* Main container layout */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .profile-card .img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .profile-card h2 {
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+
+    .profile-card p {
+        font-size: 1rem;
+    }
+
+    /* Buttons */
+    .button1,
+    .button2 {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    /* Info card */
+    .info-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .info-card input[type="text"] {
+        width: 100%;
+        margin: 10px 0;
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .info-card button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    /* Status Card */
+    .status-card {
+        width: 90%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .status-bar {
+        margin: 15px 0;
+    }
+
+    .status-bar span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .status-bar .bar {
+        height: 10px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .status-bar .bar .progress {
+        height: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* For devices with width up to 480px (smartphones) */
+@media screen and (max-width: 480px) {
+
+    /* Navigation bar layout */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav button {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .profile-card .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Buttons */
+    .button1,
+    .button2 {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    /* Info card */
+    .info-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .info-card input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .info-card button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    /* Status Card */
+    .status-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .status-bar {
+        margin: 15px 0;
+    }
+
+    .status-bar span {
+        font-size: 0.9rem;
+    }
+
+    .status-bar .bar {
+        height: 8px;
+    }
+
+    .status-bar .bar .progress {
+        height: 8px;
+    }
+}
+
+/* For devices with width up to 320px (very small screens) */
+@media screen and (max-width: 320px) {
+
+    /* Navigation bar layout */
+    .nav button {
+        width: 100%;
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    /* Profile Card */
+    .profile-card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .profile-card .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-card h2 {
+        font-size: 1rem;
+    }
+
+    .profile-card p {
+        font-size: 0.8rem;
+    }
+
+    /* Buttons */
+    .button1,
+    .button2 {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Info card */
+    .info-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .info-card input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .info-card button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Status Card */
+    .status-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .status-bar {
+        margin: 10px 0;
+    }
+
+    .status-bar span {
+        font-size: 0.8rem;
+    }
+
+    .status-bar .bar {
+        height: 6px;
+    }
+
+    .status-bar .bar .progress {
+        height: 6px;
+    }
+}

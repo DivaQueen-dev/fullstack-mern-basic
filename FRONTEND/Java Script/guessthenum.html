@@ -1,0 +1,35 @@
+<html>
+
+<body>
+    <script>
+        const ran_Number = Math.floor(Math.random() * 100) + 1;
+        let guess;
+        let attempts = 0;
+        while (true)
+        {
+            guess = (prompt("Guess the number between 1 and 100: "));
+            guess=Number(guess)
+            attempts++;
+            if (guess === ran_Number)
+            {
+                alert(`Congratulations! You guessed the correct number ${ran_Number} in ${attempts} attempts.`);
+                break;
+            }
+            else if (Math.abs(guess - ran_Number) <= 5)
+            {
+                alert("You're very close! Keep trying.");
+            }
+            else if (guess > ran_Number)
+            {
+                alert("Your guess is too high.");
+            }
+            else
+            {
+                alert("Your guess is too low.");
+            }
+        }
+//you can use parse int and 10 also 
+    </script>
+</body>
+
+</html>

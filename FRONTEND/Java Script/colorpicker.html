@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color-picker</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100svh;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    p
+    {
+        margin-top: 150px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <center>
+    <h1 style="text-align: center;">Pick any color</h1>
+    <p>The color code is :  <span id="color">will be shown here..</span></p>
+    <form action="" oninput="Color()">
+        <input type="color">
+    </form>
+</center>
+    <script>
+        function Color(){
+            let val=event.target.value
+            console.log(val)
+            let body = document.body;
+            body.style.backgroundColor = val;
+           let a= document.getElementById("color")
+            a.innerHTML=val
+        }
+    </script>
+</body>
+</html>

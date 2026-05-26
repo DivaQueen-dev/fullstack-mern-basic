@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <script>
+        //sum of digits of a number
+        let num1 = 123456789
+        console.log("the number is : "+num1);
+        let num1_ = num1.toString();
+        let sum = 0;
+        for (let i = 0; i < num1_.length; i++) {
+            sum = sum + parseInt(num1_[i]);
+        }
+        console.log("the sum of digits of the number is: "+sum)
+        //reverse of a number
+        let num = 444;
+        console.log("before reversing: " + num)
+        let rev_num = "";
+        let num_ = num.toString();
+        for (let i = num_.length - 1; i >= 0; i--) {
+            rev_num = rev_num + num_[i];
+        }
+        console.log("after reversing: " + rev_num);
+        //palindrome or not
+        if (num == rev_num) {
+            console.log("it is a palindrome num ");
+        }
+        else {
+            console.log("it is not a plaindrome number ")
+        }
+    </script>
+</body>
+
+</html>

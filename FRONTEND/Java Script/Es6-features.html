@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6_Featues</title>
+</head>
+<body>
+   <!--  
+   1.let and const
+   2.Arrow functions
+   3.spread operator
+   4.default parameters in functions
+   5.string interpolation(templtaes in strings) 
+   6.object and array destructing
+   7.Modules 
+   you can click f12 and crtl shift i
+   -->
+   <script>
+    let arr=["grapes","apple","banana"]
+    let [apple,grapes,banana]=arr
+    console.log(apple , grapes);
+    const example=()=>
+   {
+    console.log("hii");
+   }
+example();
+function fun(a=10,b=1,c=5)
+{
+    console.log(a+b+c)
+}
+fun(1, 2 ,3);
+fun(1,2);
+fun(8);
+let name="ashtovino";
+let age=17;
+console.log(` hey yo!! my name is ${name} and im ${age} years old`);
+console.log("i am"+name+"i am "+age);//instead os this we use that
+
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+// const numbersCombined = {...numbersOne, ...numbersTwo}; this is another way
+const numbersCombined = [...numbersOne, ...numbersTwo]
+console.log(numbersCombined)
+
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+console.log(myUpdatedVehicle);
+
+
+</script>
+
+</body>
+</html>

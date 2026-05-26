@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        .buttons {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            bottom: 450px; 
+        }
+
+        #pic {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh; 
+        }
+    </style>
+</head>
+<body>
+    <div id="pic-container">
+        <div id="pic"></div>
+    </div>
+    <div class="buttons">
+        <button id="prevButton" style="padding: 20px; border-radius: 100%;">◀</button>
+        <button id="nextButton" style="padding: 20px; border-radius: 100%">▶</button>
+    </div>
+
+    <script>
+        const images = [
+            "../images/header_home-scaled.jpg",
+            "../images/pc.avif",
+            "../images/post2.jpg",
+            "../images/bird.webp",
+            "../images/vintage-aesthetic.jpg",
+            "../images/BF_Drop_Banner_Desktop_2000x.webp"
+        ];
+
+        let currentIndex = 0;
+
+        const picElement = document.getElementById('pic');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function showImage(index) {
+            picElement.style.backgroundImage = `url(${images[index]})`;
+        }
+
+        prevButton.addEventListener('click', function() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        });
+
+      
+        showImage(currentIndex);
+
+    </script>
+</body>
+</html>

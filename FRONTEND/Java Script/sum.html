@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of numbers</title>
+</head>
+<body>
+    <script>
+    let number=23456;
+    let sum=0;
+    while(number!=0)
+    {
+        sum=sum+number%10;
+        number = parseInt
+        (number/10);
+     }
+     console.log(sum)
+     //reverse of a number
+     let n=2524;
+     let r=0;
+     let rev=0;
+     console.log("before reversing "+n);
+     while(n!=0)
+     {
+        r=n%10;
+        rev=r+rev*10;
+        n=parseInt(n/10)
+     }
+    
+     console.log("after reversing "+rev);
+     //palindrome or not
+     if(n==rev)
+     {
+        console.log("it is a palindrome num ");
+     }
+     else
+     {
+        console.log("it is not a palindrome num ");
+     }
+      //backtics or Template Literals
+    let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+console.log(total)
+</script>
+</body>
+</html>

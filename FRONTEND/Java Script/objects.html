@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- objects are mutable i.e changable-->
+<body>
+    <script>
+        //one
+        const obj = {
+            first_name: "aditya",
+            last_name: "ram",
+            age: 17
+        }
+        console.log(obj)
+        console.log(obj.last_name);
+        //two
+        let obj1 = new Object();
+        obj1.first_name = "kamal",
+            obj1.last_name = "shrek",
+            console.log(obj1)
+        delete obj1.first_name;
+        console.log(obj1);
+        //three
+        let obj2 =
+        {
+            //  key:values -> obj only contain key and values
+            first_name: "kishor",
+            last_name: "kumar",//this is used to pass its respective  objects value
+            number: 1239803,
+            hobbies: ['music,dance,reading', 'binging'],
+            //four
+            full_name: function (val, ver) {
+                return this.first_name + " " + this.last_name + " " + "is" + " " + val + "" + " years old" + " "
+                    + " , and he is a" + " " + ver
+            },
+            sentence: function (variable) {
+                return this.number
+            }
+
+        }
+        console.log(obj2.hobbies[0]);
+        console.log(obj2);
+        //four
+        console.log(obj2.full_name(17, "boy"))
+        console.log(obj2.sentence())
+        //five
+        let objj={
+            1:'HTML',
+            2:"CSS",
+            3:"BootStrap",
+            4:"PHP"
+        }
+        for ( a in objj)//it only takes keys beacuse they contain the values
+        {
+            console.log(a + " " +objj[a]) 
+        }
+        let objx=
+        {
+            1:"ash",
+            2:"tovino",
+            objy:{
+                name:"bird",
+                sound:"tewtewtew",
+            objz:
+            {
+                animal:"dog",
+                type:"pet"
+            }
+            }
+        }
+        console.log(objx);
+        console.log(objx[2]);//brackets nahi use karthey tho index ki tharaha liya jaata hai
+        console.log(objx.objy)
+        console.log(objx.objy.objz)
+        console.log(objx.objy.objz.animal)
+        
+    </script>
+</body>
+
+</html>

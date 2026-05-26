@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <script>
+        let course = {
+            name: "FSD",
+            period: "6 months",
+            mentors: {
+                mentor_1: "madhukumar",
+                mentor_2: "varaprasadh"
+            }
+        }
+        console.log(course)
+        let elements = [1,2,3,4,5]
+        let new_elements=elements.map((ele)=>{return ele*ele})
+        console.log(new_elements)
+        const arrayOfArray=Object.entries(course);
+        console.log(arrayOfArray);
+        let arrayOfObjects=Object.entries(course).map(([key,value])=>({key:value}))
+        console.log(arrayOfObjects)
+    </script>
+</body>
+
+</html>

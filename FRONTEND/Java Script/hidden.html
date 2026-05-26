@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Hidden content</title>
+    </head>
+    <style>
+        #parent
+        {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container
+        {
+         background-color: royalblue;
+         height: 100px;
+         width: 40%;
+         border-radius: 20px;
+        }
+        .hidden
+        {
+            display: none;
+        }
+
+    </style>
+    <body>
+        <div id="parent">
+            <h2>Show/Hide The content</h2>
+            <button onclick="fun()" style="padding: 26px;border-radius:20px;">Toggle content</button>
+            <div class="container hidden" id="hiddencontent">
+                <h1 style="text-align: center;">Hola yo soy dora</h1>
+            </div>
+        </div>
+        <script>
+            function fun()
+            {
+                const content=document.getElementById('hiddencontent');
+                content.classList.toggle('hidden');
+            }
+        </script>
+    </body>
+</html>

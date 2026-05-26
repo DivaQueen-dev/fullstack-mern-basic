@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="container">
+        <div class="item" style="background-color: green; height: 200px;width: 200px;"></div>
+        <div class="item" style="background-color: blue; height: 200px;width: 200px;"></div>
+        <div class="item" style="background-color: red; height: 200px;width: 200px;"></div>
+    </div> -->
+
+    <script>
+    
+        // const container = document.getElementById('container');
+
+       
+        // container.style.display = 'flex';
+        let btn=document.createElement('button')
+        btn.innerHTML="click here"
+        btn.style.padding="20px"
+        btn.style.backgroundColor="red";
+        btn.style.color="white"
+        btn.style.borderRadius="20px";
+        console.log(btn)
+        btn.addEventListener('click',function fun(){
+            window.alert("hello this is.....")
+        })
+        let body=document.body;
+        body.style.display="flex"
+        body.style.justifyContent="center"
+        body.appendChild(btn)
+        let h1=document.getElementsByTagName('h1')[0];
+        h1.setAttribute('class','style')
+         
+    </script>
+</body>
+</html>

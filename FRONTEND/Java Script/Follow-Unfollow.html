@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>IG</title>
+    </head>
+    <style>
+        body
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #btn
+        {
+            padding: 23px 30px;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: larger;
+        }
+    </style>
+    <body>
+        <button id="btn">Follow</button>
+        <script>
+          var istatus=  document.querySelector("#btn")
+            check=0;
+            istatus.addEventListener("click" , function()
+        {
+            if (check==0)
+        {
+            istatus.style.backgroundColor="transparent";
+            istatus.innerText="Un-Follow"
+            istatus.style.color="black";
+            check=1;
+        }
+        else
+        {
+            btn.style.backgroundColor="blue";
+          btn.innerText="Follow";
+          istatus.style.color="white";
+            check=0;
+        }
+        })
+           
+        </script>
+    </body>
+</html>

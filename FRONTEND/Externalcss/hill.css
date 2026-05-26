@@ -1,0 +1,171 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.parent {
+    height: 100svh;
+    width: 100%;
+
+}
+
+.img {
+    background-image: url('../images/nature-autumn-mountain-landscape-wallpaper.jpg');
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.img i {
+    float: right;
+    font-size: 40px;
+    color: white;
+    padding: 20px 20px;
+}
+
+.fa-solid.fa-tree {
+    float: left;
+    color: whitesmoke;
+    padding: 20px 20px;
+}
+
+.p1 {
+    font-size: larger;
+    float: left;
+    padding: 15px 10px;
+    color: white;
+    font-weight: bold !important;
+
+
+
+}
+
+.para {
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.para p {
+    color: lightgray;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-style: italic;
+}
+
+.learn {
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    opacity: 0.7;
+}
+
+.download {
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.7;
+    border: none;
+}
+
+
+.middle {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    height: 350px;
+    font-size: larger;
+}
+
+.one,
+.two,
+.three {
+    width: 30%;
+    padding: 25px;
+    float: left;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+
+.one i,
+.two i,
+.three i {
+    font-size: 40px;
+    color: green;
+    margin-bottom: 20px;
+}
+
+
+.img2 {
+
+    background-image: url('../images/WhatsApp\ Image\ 2024-12-15\ at\ 12.20.37_aa2381d1.jpg');
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    border: none;
+    background-position: center;
+}
+
+.box {
+    height: 400px;
+    width: 500px;
+    background-color: skyblue;
+    opacity: 0.7;
+    float: right;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    border-radius: 15px;
+    position: relative;
+    top: 80px;
+    right: 40px;
+
+}
+
+.sub-boxes {
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+}
+
+.box1 {
+    height: 160px;
+    width: 150px;
+    float: left;
+    border: solid white;
+    padding: 25px;
+}
+
+.box2 {
+    height: 160px;
+    width: 150px;
+    float: right;
+    border: solid white;
+    padding: 25px;
+    margin-right: 40px;
+
+}

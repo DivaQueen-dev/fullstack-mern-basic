@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../Images/sepia.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #5c3d2e;
+}
+p
+{
+    font-family: 'Lucida Handwriting', cursive;
+}
+h3{
+    font-family: Courier New;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.q-box {
+    background: rgba(244, 232, 212, 0.9); 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+}
+
+.a-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.a-info img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #5c3d2e;
+    margin-right: 12px;
+}
+
+.a-info p h3{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    background: #8b5e3c;
+    color: #f4e8d4;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #6d4328;
+}
